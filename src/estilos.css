@@ -1,0 +1,588 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.center {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*header */
+.headerC {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px;
+  height: 50px;
+  margin-bottom: 5em;
+}
+
+.headerC .headerC__title {
+  font-size: 3rem;
+  color: #ff3731;
+}
+
+.headerC .icon {
+  color: black;
+  font-size: 3rem;
+  color: gray;
+  cursor: pointer;
+  position: absolute;
+  right: 80px;
+}
+
+/*parte del fondo */
+.cabecero {
+  width: 100%;
+  height: 450px;
+  background-image: url(imgs/cup-of-coffee-g8f6d31b7b_1920.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 0.1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cabecero .cabecero__title {
+  font-size: 3.5rem;
+  color: #ffffffff;
+  font-weight: normal;
+  margin-left: 5%;
+}
+
+.cabecero .cabecero__title2 {
+  font-size: 1.3rem;
+  color: #ffffffff;
+  font-weight: normal;
+  margin-left: 5%;
+  margin-bottom: 1em;
+}
+
+.cabecero .cabecero__input {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 0pc 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0pc 1px 10px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  margin-left: 5%;
+  background-color: #efefef;
+  outline: none;
+}
+
+/*cabecero 2*/
+.cabecero2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8177), color-stop(0%, #ff867a), color-stop(21%, #ff8c7f), color-stop(52%, #f99185), color-stop(78%, #cf556c), to(#b12a5b));
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  background-repeat: no-repeat;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cabecero2 .cabecero2__p {
+  font-size: 1.3rem;
+  color: #ffffffff;
+  font-weight: normal;
+}
+
+/*Cursos */
+.sectionC {
+  background-color: #ffffe6;
+  height: 100vh;
+  width: 100%;
+}
+
+.sectionC .titleCursos {
+  padding: 50px;
+  font-size: 3.5rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.sectionC .cardsC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
+  width: 800px;
+  height: 550px;
+  gap: 30px;
+}
+
+.sectionC .cardsC .card {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-shadow: 0pc 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0pc 1px 10px rgba(0, 0, 0, 0.2);
+  height: 310px;
+  background-color: white;
+  box-shadow: 0pc 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sectionC .cardsC .card .card__img {
+  width: 100%;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.sectionC .cardsC .card .card__title {
+  margin-left: 5%;
+  padding: 5px;
+  font-size: 1.3rem;
+}
+
+.sectionC .cardsC .card .card__autor {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-left: 5%;
+}
+
+.sectionC .cardsC .card .card__img2 {
+  width: 30;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 5%;
+}
+
+.sectionC .cardsC .card .card__precio {
+  font-size: 2rem;
+  font-weight: bolder;
+  float: right;
+  position: relative;
+  top: 0px;
+  right: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+}
+
+.sectionC .cardsC .card .card__btn {
+  display: block;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  background-color: #a3a3ff;
+  color: #ffffffff;
+  cursor: pointer;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 5%;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  font-size: 1.3rem;
+}
+
+.sectionC .cardsC .card .card__btn:hover {
+  background-color: #b3b3ff;
+}
+
+hr {
+  color: gray;
+  margin-top: 65%;
+}
+
+.sFooter {
+  width: 100%;
+  height: 200px;
+}
+
+.sFooter .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3%;
+}
+
+.sFooter .footer a {
+  display: block;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+
+.sFooter .footer a:hover {
+  text-decoration: underline;
+}
+
+/*Componente de cantidad */
+.cantidad {
+  width: 20px;
+  height: 20px;
+  background-color: #ff3731;
+  border-radius: 100%;
+  position: relative;
+  right: 11px;
+  top: -5px;
+}
+
+.cantidad .cantidad__p {
+  color: #ffffffff;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 20px;
+}
+
+/*Compras*/
+.containerCompras {
+  width: 300px;
+  padding: 10px;
+  -webkit-box-shadow: 0pc 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0pc 1px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffffff;
+  border-radius: 3px;
+  position: relative;
+  top: 50px;
+}
+
+.containerCompras .comprasFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px;
+  z-index: 1;
+}
+
+.containerCompras .comprasFlex .compras__img {
+  height: 80px;
+  width: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3px;
+}
+
+.containerCompras .comprasFlex .compras__title {
+  font-size: 1rem;
+  width: 50%;
+  color: black;
+  font-weight: bold;
+}
+
+.containerCompras .comprasFlex .compras__price {
+  font-size: 1.3rem;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+}
+
+.containerCompras .comprasFlex .comprasBorrar {
+  font-size: 1.5rem;
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.containerCompras .comprasVaciar {
+  border: 1px solid #efefef;
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  padding: 3px;
+  color: gray;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px) {
+  .headerC .icon {
+    position: absolute;
+    left: 600px;
+  }
+  .cabecero {
+    width: 800px;
+    height: 450px;
+    background-image: url(imgs/cup-of-coffee-g8f6d31b7b_1920.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 0.1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cabecero .cabecero__title {
+    font-size: 3.5rem;
+    color: #ffffffff;
+    font-weight: normal;
+    margin-left: 5%;
+  }
+  .cabecero .cabecero__title2 {
+    font-size: 1.3rem;
+    color: #ffffffff;
+    font-weight: normal;
+    margin-left: 5%;
+    margin-bottom: 1em;
+  }
+  .cabecero .cabecero__input {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    -webkit-box-shadow: 0pc 1px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0pc 1px 10px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    margin-left: 5%;
+    background-color: #efefef;
+    outline: none;
+  }
+  .cabecero2 {
+    width: 800px;
+  }
+  /*Cursos */
+  .sectionC {
+    height: 100vh;
+    width: 800px;
+  }
+  .sectionC .titleCursos {
+    display: block;
+    text-align: center;
+    padding: 50px;
+    font-size: 3.5rem;
+    font-weight: normal;
+  }
+  .sectionC .cardsC {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 20px;
+    width: 800px;
+    height: 550px;
+    gap: 30px;
+  }
+  .sectionC .cardsC .card {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    -webkit-box-shadow: 0pc 1px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0pc 1px 10px rgba(0, 0, 0, 0.2);
+    height: 310px;
+    background-color: white;
+    box-shadow: 0pc 1px 10px rgba(0, 0, 0, 0.2);
+  }
+  .sectionC .cardsC .card .card__img {
+    width: 100%;
+    border-radius: 3px 3px 0px 0px;
+  }
+  .sectionC .cardsC .card .card__title {
+    margin-left: 5%;
+    padding: 5px;
+    font-size: 1.3rem;
+  }
+  .sectionC .cardsC .card .card__autor {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 5%;
+  }
+  .sectionC .cardsC .card .card__img2 {
+    width: 30;
+    height: 30px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-left: 5%;
+  }
+  .sectionC .cardsC .card .card__precio {
+    font-size: 2rem;
+    font-weight: bolder;
+    float: right;
+    position: relative;
+    top: 0px;
+    right: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+  }
+  .sectionC .cardsC .card .card__btn {
+    display: block;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    background-color: #a3a3ff;
+    color: #ffffffff;
+    cursor: pointer;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 5%;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    font-size: 1.3rem;
+  }
+  .sectionC .cardsC .card .card__btn:hover {
+    background-color: #b3b3ff;
+  }
+  hr {
+    color: gray;
+    margin-top: 200%;
+    width: 800px;
+  }
+  .sFooter {
+    width: 800px;
+    height: 200px;
+  }
+  .sFooter .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 3%;
+  }
+  .sFooter .footer a {
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-bottom: 1em;
+    color: blue;
+  }
+  .sFooter .footer a:hover {
+    text-decoration: underline;
+  }
+  /*Compras*/
+  .containerCompras {
+    width: 300px;
+    padding: 10px;
+    -webkit-box-shadow: 0pc 1px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0pc 1px 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffffff;
+    border-radius: 3px;
+    position: relative;
+    top: 50px;
+    left: 200px;
+  }
+  .containerCompras .comprasFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 8px;
+    z-index: 1;
+  }
+  .containerCompras .comprasFlex .compras__img {
+    height: 80px;
+    width: 80px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3px;
+  }
+  .containerCompras .comprasFlex .compras__title {
+    font-size: 1rem;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+  }
+  .containerCompras .comprasFlex .compras__price {
+    font-size: 1.3rem;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+  }
+  .containerCompras .comprasFlex .comprasBorrar {
+    font-size: 1.5rem;
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .containerCompras .comprasVaciar {
+    border: 1px solid #efefef;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding: 3px;
+    color: gray;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
